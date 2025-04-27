@@ -15,8 +15,7 @@ function App() {
           </Col>
           <Col md={10} className=" p-3 ps-0 pe-5">
             <Routes>
-              <Route path="/" element={<h1>Home</h1>} />
-              <Route path="/employees" element={<Employees />} />
+              <Route path="/" element={<Employees />} />
             </Routes>
           </Col>
         </Row>

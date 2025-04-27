@@ -4,13 +4,13 @@ import { useNavigate } from "react-router-dom";
 const Sidebar = () => {
     const [activeItem, setActiveItem] = useState("Employees");
     const navigate= useNavigate();
-    const menuItems = ["Employees"];
+    const menuItems = [""];
 
     return (
         <div className="sidebar" style={{ backgroundColor: "#1d1d41", height: "100vh", width: "200px", padding: "20px" }}>
             <div className="sidebar__title" style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "20px", color: "white" }}>
                 <span style={{ color: "#1FCB4F" }}>Tech</span>Lambdas
-            </div>
+            </div> 
             <div className="sidebar__content">
                 {menuItems.map((item) => (
                     <div

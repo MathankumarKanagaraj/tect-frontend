@@ -9,7 +9,7 @@ const Offcanvas = ({ show, onHide, title, fields, onSubmit, register, errors }) 
                 <BootstrapOffcanvas.Title>{title}</BootstrapOffcanvas.Title>
             </BootstrapOffcanvas.Header>
             <BootstrapOffcanvas.Body>
-                <Form onSubmit={onSubmit}> 
+                <Form onSubmit={onSubmit}>
                     {fields.map((field) => (
                         <FormField
                             key={field.name}
@@ -19,7 +19,10 @@ const Offcanvas = ({ show, onHide, title, fields, onSubmit, register, errors }) 
                         />
                     ))}
                     <div className="text-end mt-4">
-                        <Button type="submit" variant="success">
+                        <Button className="me-4" type="button" style={{ color: "#1FCB4F", backgroundColor: "white", borderColor: "#1FCB4F" }} onClick={onHide}>
+                            Cancel
+                        </Button>
+                        <Button type="submit" style={{ color: "white", backgroundColor: "#1FCB4F", borderColor: "#1FCB4F" }}>
                             Submit
                         </Button>
                     </div>
